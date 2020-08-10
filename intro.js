@@ -1103,7 +1103,6 @@
         //show the tooltip
         oldtooltipContainer.style.opacity = 1;
         if (oldHelperNumberLayer) {
-          debugger
           oldHelperNumberLayer.style.opacity = 1;
           if (self._introItems[self._currentStep].numberPosition) {
             oldHelperNumberLayer.style[self._introItems[self._currentStep].numberPosition] = '-16px';
