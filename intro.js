@@ -1102,7 +1102,15 @@
 
         //show the tooltip
         oldtooltipContainer.style.opacity = 1;
-        if (oldHelperNumberLayer) oldHelperNumberLayer.style.opacity = 1;
+        if (oldHelperNumberLayer) {
+          debugger
+          oldHelperNumberLayer.style.opacity = 1;
+          if (self._introItems[self._currentStep].numberPosition) {
+            oldHelperNumberLayer.style[self._introItems[self._currentStep].numberPosition] = '-16px';
+          } else {
+            oldHelperNumberLayer.style.left = '-16px';
+          }
+        }
 
         //reset button focus
         if (typeof skipTooltipButton !== "undefined" && skipTooltipButton !== null && /introjs-donebutton/gi.test(skipTooltipButton.className)) {
