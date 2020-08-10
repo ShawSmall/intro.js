@@ -1355,18 +1355,17 @@
       }
       if (typeof prevTooltipButton !== "undefined" && prevTooltipButton !== null) {
         prevTooltipButton.className = this._options.buttonClass + ' introjs-prevbutton';
+        prevTooltipButton.setAttribute('role', 'button');
       }
       if (typeof nextTooltipButton !== "undefined" && nextTooltipButton !== null) {
         nextTooltipButton.className = this._options.buttonClass + ' introjs-nextbutton';
+        nextTooltipButton.setAttribute('role', 'button');
       }
       if (typeof skipTooltipButton !== "undefined" && skipTooltipButton !== null) {
         skipTooltipButton.innerHTML = this._options.skipLabel;
+        skipTooltipButton.setAttribute('role', 'button');
       }
     }
-
-    prevTooltipButton.setAttribute('role', 'button');
-    nextTooltipButton.setAttribute('role', 'button');
-    skipTooltipButton.setAttribute('role', 'button');
 
     //Set focus on "next" button, so that hitting Enter always moves you onto the next step
     if (typeof nextTooltipButton !== "undefined" && nextTooltipButton !== null) {
