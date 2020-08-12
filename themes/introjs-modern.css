@@ -1,55 +1,89 @@
 .introjs-tooltip {
-  background-color: rgba(000, 0, 0, 0.5);
-  color: #fff;
+  background-color: rgba(255, 255, 255, 1);
+  color: #333333;
+  font-size:14px;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color: rgba(51,51,51,1);
+  line-height:28px;
+  box-shadow:0px 2px 4px 0px rgba(7,128,237,0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.introjs-helperLayer {
+  border-radius: 8px;
 }
 
 .introjs-button,
-.introjs-button:hover, .introjs-button:focus, .introjs-button:active,
-.introjs-disabled, .introjs-disabled:focus, .introjs-disabled:hover {
+.introjs-disabled {
   outline: none;
   background-image: none;
   background-color: transparent;
-  color: #fff;
+  color: rgba(153,153,153,1);
   border: 1px solid transparent;
   border-radius: 50px;
   box-shadow: none;
   border-shadow: none;
   text-shadow: none;
+  border-radius:12px;
+}
+
+introjs-prevbutton.introjs-fullbutton {
+  border: 0;
 }
 
 .introjs-button:hover, .introjs-button:focus, .introjs-button:active {
-  border: 1px solid #fff
+  color: rgba(7,128,237,1);
+  border: 1px solid transparent;
+  box-shadow: none;
+  background-image: none;
 }
+
 .introjs-disabled, .introjs-disabled:focus, .introjs-disabled:hover {
   color: #ccc;
   border: 1px solid transparent;
+}
+
+.introjs-donebutton {
+  color: rgba(7,128,237,1);
+  border:1px solid rgba(7,128,237,1);
+  box-shadow:0px 2px 4px 0px rgba(7,128,237,0);
+  float: right;
+  background: #ffffff;
+}
+
+.introjs-donebutton:hover, .introjs-donebutton:focus  {
+  color: rgba(7,128,237,1);
+  border:1px solid rgba(7,128,237,1);
+  box-shadow:0px 2px 4px 0px rgba(7,128,237,0);
 }
 
 .introjs-arrow {
   border: 10px solid #fff;
 }
 .introjs-arrow.top, .introjs-arrow.top-middle, .introjs-arrow.top-right {
-  border-color: transparent transparent rgba(000, 0, 0, 0.5);
+  border-color: transparent transparent rgba(255, 255, 255, 1);
   top: -20px;
   left: 20px;
 }
 .introjs-arrow.bottom, .introjs-arrow.bottom-middle, .introjs-arrow.bottom-right {
-  border-color: rgba(000, 0, 0, 0.5) transparent transparent;
+  border-color: rgba(255, 255, 255, 1) transparent transparent;
   bottom: -20px;
   left: 20px;
 }
 .introjs-arrow.left, .introjs-arrow.right {
-    top: 20px;
+    top: 11px;
 }
 .introjs-arrow.left-bottom, .introjs-arrow.right-bottom {
-    bottom: 20px;
+    bottom: 11px;
 }
 
 .introjs-arrow.left, .introjs-arrow.left-bottom {
   left: -20px;
-  border-color: transparent rgba(000, 0, 0, 0.5) transparent transparent;
+  border-color: transparent rgba(255, 255, 255, 1) transparent transparent;
 }
 .introjs-arrow.right, .introjs-arrow.right-bottom {
   right: -20px;
-  border-color: transparent transparent transparent rgba(000, 0, 0, 0.5);
+  border-color: transparent transparent transparent rgba(255, 255, 255, 1);
 }
